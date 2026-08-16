@@ -1,0 +1,130 @@
+<!-- settings.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="icon" type="image/png" href="assets/settingsfavicon.png">
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <div class="nav">
+            <img src="assets/mrcarliftlogo.png" alt="MR CarLift Logo" id="logo">
+            <nav>
+                <a href="index.html" id="home-btn">Home</a>
+                <a href="settings.html" id="settings-btn">Settings</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Settings Form -->
+    <main>
+        <section id="settings-form">
+            <h1>Settings</h1>
+            <form id="settings-form">
+                <!-- General Settings -->
+                <h2>General Settings</h2>
+                <label for="avg_speed_kmh">Average Speed (km/h)</label>
+                <input type="number" id="avg_speed_kmh" name="avg_speed_kmh" placeholder="Enter average speed" step="0.1">
+                <label for="enforce_schedule_clash">Enforce Schedule Clash</label>
+                <input type="checkbox" id="enforce_schedule_clash" name="enforce_schedule_clash">
+                <label for="morning_early_min">Morning Early Min (minutes)</label>
+                <input type="number" id="morning_early_min" name="morning_early_min" placeholder="Enter morning early min" step="1">
+                <label for="morning_early_ok_min">Morning Early OK Min (minutes)</label>
+                <input type="number" id="morning_early_ok_min" name="morning_early_ok_min" placeholder="Enter morning early ok min" step="1">
+                <label for="morning_late_min">Morning Late Min (minutes)</label>
+                <input type="number" id="morning_late_min" name="morning_late_min" placeholder="Enter morning late min" step="1">
+                <label for="morning_late_ok_min">Morning Late OK Min (minutes)</label>
+                <input type="number" id="morning_late_ok_min" name="morning_late_ok_min" placeholder="Enter morning late ok min" step="1">
+                <label for="evening_early_min">Evening Early Min (minutes)</label>
+                <input type="number" id="evening_early_min" name="evening_early_min" placeholder="Enter evening early min" step="1">
+                <label for="evening_early_ok_min">Evening Early OK Min (minutes)</label>
+                <input type="number" id="evening_early_ok_min" name="evening_early_ok_min" placeholder="Enter evening early ok min" step="1">
+                <label for="evening_late_min">Evening Late Min (minutes)</label>
+                <input type="number" id="evening_late_min" name="evening_late_min" placeholder="Enter evening late min" step="1">
+                <label for="evening_late_ok_min">Evening Late OK Min (minutes)</label>
+                <input type="number" id="evening_late_ok_min" name="evening_late_ok_min" placeholder="Enter evening late ok min" step="1">
+
+                <!-- P1 Settings -->
+                <h2>P1 Settings</h2>
+                <label for="max_pickup_km">Max Pickup KM</label>
+                <input type="number" id="max_pickup_km" name="max_pickup_km" placeholder="Enter max pickup distance" step="0.1">
+                <label for="w_deadhead">Weight Deadhead</label>
+                <input type="number" id="w_deadhead" name="w_deadhead" placeholder="Enter weight for deadhead" step="0.01">
+                <label for="w_seat">Weight Seat</label>
+                <input type="number" id="w_seat" name="w_seat" placeholder="Enter weight for seat" step="0.01">
+                <label for="w_status">Weight Status</label>
+                <input type="number" id="w_status" name="w_status" placeholder="Enter weight for status" step="0.01">
+                <label for="p1_emit_outsource">Emit Outsource</label>
+                <input type="checkbox" id="p1_emit_outsource" name="p1_emit_outsource">
+                <label for="p1_top_k">Top K</label>
+                <input type="number" id="p1_top_k" name="p1_top_k" placeholder="Enter Top K" step="1">
+
+                <!-- P2 Settings -->
+                <h2>P2 Settings</h2>
+                <label for="p2_max_detour_km">Max Detour KM</label>
+                <input type="number" id="p2_max_detour_km" name="p2_max_detour_km" placeholder="Enter max detour km" step="0.1">
+                <label for="p2_max_detour_ratio">Max Detour Ratio</label>
+                <input type="number" id="p2_max_detour_ratio" name="p2_max_detour_ratio" placeholder="Enter max detour ratio" step="0.01">
+                <label for="p2_max_shift_min">Max Shift (minutes)</label>
+                <input type="number" id="p2_max_shift_min" name="p2_max_shift_min" placeholder="Enter max shift time in minutes" step="1">
+                <label for="p2_w_detour">Weight Detour</label>
+                <input type="number" id="p2_w_detour" name="p2_w_detour" placeholder="Enter weight for detour" step="0.01">
+                <label for="p2_w_time">Weight Time</label>
+                <input type="number" id="p2_w_time" name="p2_w_time" placeholder="Enter weight for time" step="0.01">
+                <label for="p2_top_k">Top K</label>
+                <input type="number" id="p2_top_k" name="p2_top_k" placeholder="Enter Top K" step="1">
+
+                <!-- P3 Settings -->
+                <h2>P3 Settings</h2>
+                <label for="p3_enabled">Enabled</label>
+                <input type="checkbox" id="p3_enabled" name="p3_enabled">
+                <label for="p3_top_k">Top K</label>
+                <input type="number" id="p3_top_k" name="p3_top_k" placeholder="Enter Top K" step="1">
+                <label for="p3_min_improvement">Min Improvement</label>
+                <input type="number" id="p3_min_improvement" name="p3_min_improvement" placeholder="Enter minimum improvement" step="0.01">
+                <label for="p3_max_pickup_km">Max Pickup KM</label>
+                <input type="number" id="p3_max_pickup_km" name="p3_max_pickup_km" placeholder="Enter max pickup distance" step="0.1">
+                <label for="p3_min_fit">Min Fit</label>
+                <input type="number" id="p3_min_fit" name="p3_min_fit" placeholder="Enter minimum fit score" step="0.01">
+                <label for="p3_swap_enabled">Swap Enabled</label>
+                <input type="checkbox" id="p3_swap_enabled" name="p3_swap_enabled">
+                <label for="p3_swap_needed_fit_below">Swap Needed Fit Below</label>
+                <input type="number" id="p3_swap_needed_fit_below" name="p3_swap_needed_fit_below" placeholder="Enter swap needed fit below" step="0.01">
+                <label for="p3_swap_penalty">Swap Penalty</label>
+                <input type="number" id="p3_swap_penalty" name="p3_swap_penalty" placeholder="Enter swap penalty" step="0.01">
+                <label for="p3_swap_max_reposition_km">Swap Max Reposition KM</label>
+                <input type="number" id="p3_swap_max_reposition_km" name="p3_swap_max_reposition_km" placeholder="Enter max reposition distance" step="0.1">
+                <label for="p3_swap_prefix">Swap Prefix</label>
+                <input type="text" id="p3_swap_prefix" name="p3_swap_prefix" placeholder="Enter swap prefix">
+
+                <!-- P4 Settings -->
+                <h2>P4 Settings</h2>
+                <label for="p4_enabled">Enabled</label>
+                <input type="checkbox" id="p4_enabled" name="p4_enabled">
+                <label for="p4_emit_outsource">Emit Outsource</label>
+                <input type="checkbox" id="p4_emit_outsource" name="p4_emit_outsource">
+                <label for="p4_merge_time_gap_min">Merge Time Gap (minutes)</label>
+                <input type="number" id="p4_merge_time_gap_min" name="p4_merge_time_gap_min" placeholder="Enter merge time gap in minutes" step="1">
+                <label for="p4_merge_pickup_km">Merge Pickup KM</label>
+                <input type="number" id="p4_merge_pickup_km" name="p4_merge_pickup_km" placeholder="Enter merge pickup distance" step="0.1">
+                <label for="p4_merge_dropoff_km">Merge Dropoff KM</label>
+                <input type="number" id="p4_merge_dropoff_km" name="p4_merge_dropoff_km" placeholder="Enter merge dropoff distance" step="0.1">
+                <label for="p4_max_driver_pickup_km">Max Driver Pickup KM</label>
+                <input type="number" id="p4_max_driver_pickup_km" name="p4_max_driver_pickup_km" placeholder="Enter max driver pickup distance" step="0.1">
+                <label for="p4_merge_outsource_when_no_driver">Outsource When No Driver</label>
+                <input type="checkbox" id="p4_merge_outsource_when_no_driver" name="p4_merge_outsource_when_no_driver">
+
+                <!-- Save Settings Button -->
+                <button type="submit" id="save-settings-btn">Save Settings</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/settings.js"></script>
+</body>
+</html>

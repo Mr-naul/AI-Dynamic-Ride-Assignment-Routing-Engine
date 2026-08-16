@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MR CARLIFT ASSIGNMENT GENERATION</title>
+    <link rel="icon" href="assets/homefavicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <!-- Home Page -->
+    <div id="home-page">
+        <header>
+            <div class="nav">
+                <img src="assets/mrcarliftlogo.png" alt="MR CarLift Logo" id="logo">
+                <h1>MR CARLIFT ASSIGNMENT GENERATION</h1>
+            </div>
+        </header>
+
+        <div id="main-content">
+            <!-- Assignment Request Form -->
+            <div id="assignment-form">
+                <input type="text" id="assignmentID" placeholder="Enter the Assignment ID">
+                <button id="getResults">Get Results</button>
+            </div>
+
+            <!-- Result Section -->
+            <div id="result">
+                <p><strong>No of Drivers:</strong> <span id="driversCount">0</span></p>
+                <p><strong>No of Driver Schedules:</strong> <span id="schedulesCount">0</span></p>
+                <p><strong>No of Bookings:</strong> <span id="bookingsCount">0</span></p>
+                <p><strong>Total Assignments Generated:</strong> <span id="assignmentsCount">0</span></p>
+            </div>
+
+            <!-- Link to Settings Page -->
+            <a href="settings.html" id="settings-btn">Go to Settings</a>
+        </div>
+    </div>
+
+</body>
+</html>
