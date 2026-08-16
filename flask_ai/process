@@ -1,0 +1,10 @@
+activate the virtual enviroment
+open cmd > venv\Scripts\activate
+
+ON the FLASK END POINT OF APP.PY 
+
+
+python receiver_app.py
+python db_loader_app.py
+python db_loader_output.py
+python sender_app.py
